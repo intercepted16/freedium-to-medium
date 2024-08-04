@@ -1,3 +1,5 @@
+# Freedium to Medium
+
 This userscript automates the redirection of Medium articles to `freedium.cfd`, a site that allows you to read Medium Premium articles for free! The reason you cannot use a simple redirection pattern is due to the following reasons:
 
 Medium is an SPA; therefore browsing articles and clicking on one wouldn't rerun the script
