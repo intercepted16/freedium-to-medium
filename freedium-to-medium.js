@@ -15,17 +15,17 @@
 const { onNavigate } = VM;
 
 function handleNavigate() {
-  // The script is also run on two subdomains as some Medium articles are on those.
-  // As Medium is an SPA, we have to use `onNavigate`
-  // However, we might not be on an article
+  /* The script is also run on two subdomains as some Medium articles are on those.
+     As Medium is an SPA, we have to use `onNavigate`
+     However, we might not be on an article */
   if (window.location.hostname === "medium.com") {
   if (!/.*\:\/\/.*medium\.com\/.*\/.*/.test(window.location.href)) {
     return;
   }
   }
 
-  // As mentioned earlier, we might be on two nested subdomains that are a Medium article. We can check this:
-  // the include patterns are setup to match that
+  /* As mentioned earlier, we might be on two nested subdomains that are a Medium article. We can check this:
+     the include patterns are setup to match that */
   document.querySelectorAll("meta").forEach((el) => {
     if (el.getAttribute("content") === "Medium") {
       onMedium();
