@@ -3,11 +3,13 @@
 // @namespace   Violentmonkey Scripts
 // @match       *://*.medium.com/*
 // @grant       none
-// @version     1.2
+// @version     1.3
 // @description 30/06/2024, 11:35:39
 // @require     https://unpkg.com/@violentmonkey/url
 // @include     /.*\..*\..*\/.*/
 // @license     MIT
+// @updateURL   https://raw.githubusercontent.com/intercepted16/freedium-to-medium/master/freedium-to-medium.js
+// @downloadURL https://raw.githubusercontent.com/intercepted16/freedium-to-medium/master/freedium-to-medium.js
 // ==/UserScript==
 
 const { onNavigate } = VM;
